@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:paddingBottom="50dp"-->
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp">-->
+
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="50dp" />
+
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_above="@+id/b7"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:layout_height="100dp" />
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b4"
+        android:layout_alignParentStart="true"
+        android:background="#2e3032"
+        android:text="7"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b7"
+        android:layout_toEndOf="@+id/b7"
+        android:background="#2e3032"
+        android:text="8"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b7"
+        android:layout_toEndOf="@+id/b8"
+        android:background="#2e3032"
+        android:text="9"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <Button
+        android:id="@+id/bdiv"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/b7"
+        android:background="#2e3032"
+        android:text="/"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="166dp" />
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b1"
+        android:layout_alignParentStart="true"
+        android:background="#2e3032"
+        android:text="4"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b8"
+        android:layout_toRightOf="@+id/b4"
+        android:background="#2e3032"
+        android:text="5"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b9"
+        android:layout_toRightOf="@+id/b5"
+        android:background="#2e3032"
+        android:text="6"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <Button
+        android:id="@+id/bmul"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/b7"
+        android:background="#2e3032"
+        android:text="x"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="214dp" />
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bdot"
+        android:layout_alignParentStart="true"
+        android:background="#2e3032"
+        android:text="1"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b5"
+        android:layout_toRightOf="@+id/b1"
+        android:background="#2e3032"
+        android:text="2"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b4"
+        android:layout_toEndOf="@+id/b8"
+        android:background="#2e3032"
+        android:text="3"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <Button
+        android:id="@+id/badd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/b4"
+        android:background="#2e3032"
+        android:text="+"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="262dp" />
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
+
+    <Button
+        android:id="@+id/bdot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/b0"
+        android:background="#2e3032"
+        android:text="."
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="117dp"
+        android:layout_toEndOf="@+id/b7"
+        android:background="#2e3032"
+        android:text="0"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/bcl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bdot"
+        android:layout_toEndOf="@+id/b8"
+        android:background="#2e3032"
+        android:text="C"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/bsub"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/bdot"
+        android:background="#2e3032"
+        android:text="-"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="310dp" />
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
+
+    <Button
+        android:id="@+id/beq"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_above="@+id/bhist"
+        android:layout_alignParentStart="true"
+        android:background="#2e3032"
+        android:text="="
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <Button
+        android:id="@+id/bhist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_light"
+        android:text="HISTORY"
+        android:textColor="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
